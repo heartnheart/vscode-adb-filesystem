@@ -1,9 +1,9 @@
 {
-	"name": "adb-filesystem",
-	"displayName": "ADB File System",
-	"description": "file system for connected android devices, using adb",
+	"name": "adb-filesystem-fork",
+	"displayName": "ADB File System (fork)",
+	"description": "file system for connected android devices, using adb, forked to access root dir with adb root",
 	"version": "0.0.3",
-	"publisher": "MakotoHamanaka",
+	"publisher": "heartnheart",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
@@ -65,6 +65,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mhama/vscode-adb-filesystem.git"
+		"url": "https://github.com/heartnheart/vscode-adb-filesystem"
 	}
 }

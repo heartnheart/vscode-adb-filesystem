@@ -261,9 +261,9 @@ export class AdbFS implements vscode.FileSystemProvider {
         parts.shift();
         let path = parts.join("/");
         if (path == "") {
-            path = "/sdcard";
+            path = "/";
         } else {
-            path = "/sdcard/" + path;
+            path = "/" + path;
         }
         return { "deviceId": deviceId, "path": path };
     }
