@@ -3,7 +3,7 @@
 	"displayName": "ADB File System (fork)",
 	"description": "file system for connected android devices, using adb, forked to access root dir with adb root",
 	"version": "0.0.3",
-	"publisher": "heartnheart",
+	"publisher": "heartnheart2",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
@@ -16,8 +16,8 @@
 	],
 	"main": "./out/extension.js",
 	"author": {
-		"name": "Makoto Hamanaka",
-		"email": "ham.lua@gmail.com"
+		"name": "Xiaolong Zhang",
+		"email": "heartnheart@live.cn"
 	},
 	"license": "MIT",
 	"contributes": {
