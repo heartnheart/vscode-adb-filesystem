@@ -139,6 +139,10 @@ export class AdbFS implements vscode.FileSystemProvider {
             let stream = streamifier.createReadStream(Buffer.from(content));
             try {
                 await adbClient.push(adbPath.deviceId, stream, adbPath.path)
+                if(adbPath.path.startsWith('/data/data/com.irisview.irisxr')) {
+                    await adbClient.shell(adbPath.deviceId, 'chown system:system ' + adbPath.path)
+                }
+
                 console.log("writeFile succeeded.");
                 resolve();
             }
